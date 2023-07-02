@@ -1,0 +1,33 @@
+text.text-input {
+    border: 3rem;
+    border-radius: 3rem;
+    border-color:azure;
+    background-color: black;
+    text-align: center;
+    align-self: center;
+    text-emphasis-color: white;
+}
+
+body {
+    align-content: center;
+    flex: content;
+    background-color: grey;
+}
+
+div.container-div {
+    border: 3rem;
+    border-radius: 3rem;
+    border-color: purple;
+    align-self: center;
+    float: none;
+    vertical-align: middle;
+}
+
+button {
+    border: 3rem;
+    border-radius: 3rem;
+    border-color: black;
+    background-color: antiquewhite;
+    text-align: center;
+    align-self: center;
+}

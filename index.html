@@ -6,14 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     </head>
 
+    <link rel="stylesheet" href="index.css">
+
     <body>
-        <div>
-            <input type="text" id="modname" />
-            <input type="text" id="modvers" />
-            <input type="text" id="modwebsite" />
-            <input type="text" id="moddesc" />
+        <div class="container-div">
+            <input type="text" id="modname" placeholder="Mod Name" class="text-input" />
+            <input type="text" id="modvers" placeholder="Mod Version" class="text-input" />
+            <input type="text" id="modwebsite" placeholder="Website URL" class="text-input"/>
+            <input type="text" id="moddesc" placeholder="Mod Description" class="text-input"/>
             <div>
-                <input type="text" id="moddeps" />
+                <input type="text" id="moddeps" placeholder="Dependency Strings" class="text-input"/>
             </div>
             <input type="button" value="Create" id="enter"/>
         </div>
