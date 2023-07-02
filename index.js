@@ -31,8 +31,11 @@ function onClick(event) {
 
     let deps = moddeps.value.split('\n');
 
+    let name = modname.value;
+    name = name.replace(" ", "_");
+
     var body = {
-        name: modname.value,
+        name: name,
         version_number: modvers.value,
         website_url: modurl.value,
         description: moddesc.value,
