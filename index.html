@@ -9,15 +9,35 @@
     <link rel="stylesheet" href="index.css">
 
     <body>
-        <div class="container-div">
-            <input type="text" id="modname" placeholder="Mod Name" class="text-input" />
-            <input type="text" id="modvers" placeholder="Mod Version" class="text-input" />
-            <input type="text" id="modwebsite" placeholder="Website URL" class="text-input"/>
-            <input type="text" id="moddesc" placeholder="Mod Description" class="text-input"/>
-            <div>
-                <input type="text" id="moddeps" placeholder="Dependency Strings" class="text-input"/>
+        <script src="index.js"></script>
+
+        <div class="container-div center">
+            <div class="group">
+                <div class="floatbox">
+                    <textarea id="modname" placeholder="Mod Name" value="" class="text-input" ></textarea>
+                </div>
+                <div class="floatbox">
+                    <textarea id="modvers" placeholder="Mod Version" value="" class="text-input" ></textarea>
+                </div>
+                <div class="floatbox">
+                    <textarea id="modwebsite" placeholder="Website URL" value="" class="text-input"></textarea>
+                </div>
+                <div class="floatbox">
+                    <textarea id="moddesc" placeholder="Mod Description" value="" class="text-input"></textarea>
+                </div>
+                <div class="floatbox">
+                    <textarea id="moddeps" placeholder="Dependency Strings" value="" class="text-deps"></textarea>
+                </div>
+
+                <div class="floatbox">
+                    <input type="button" value="Create" id="enter" class="enter" onclick="onClick(event)">
+                </div>
             </div>
-            <input type="button" value="Create" id="enter"/>
+
+            <div class="floatbox">
+                <textarea id="output" placeholder="Output Manifest" value="" class="text-output" disabled="disabled"></textarea>
+            </div>
+            
         </div>
     </body>
 </html>

@@ -1,33 +1,83 @@
-text.text-input {
+textarea.text-input {
     border: 3rem;
-    border-radius: 3rem;
-    border-color:azure;
+    border-radius: 0.5rem;
+    border-color: black;
     background-color: black;
     text-align: center;
+    text-emphasis-color: black;
+    width: 200%;
+    height: 5vh;
+    margin-left: -120%;
+    color: white;
+}
+
+textarea.text-deps {
+    border: 3rem;
+    border-radius: 0.5rem;
+    border-color: black;
+    background-color: black;
+    text-align: center;
+    text-emphasis-color: black;
+    width: 200%;
+    height: 10vh;
+    color: white;
+    margin-left: -120%;
+}
+
+textarea.text-output {
+    border: 3rem;
+    border-radius: 0.5rem;
+    border-color: black;
+    background-color: black;
+    text-emphasis-color: black;
+    color: white;
+    width: 250%;
+    height: 48vh;
+    margin-left: -10%;
+}
+
+.group {
+    display: inline-block
+}
+
+.floatbox {
     align-self: center;
-    text-emphasis-color: white;
+    justify-self: center;
+    padding: 1vh;
 }
 
 body {
-    align-content: center;
-    flex: content;
-    background-color: grey;
+    background-color: #1c191b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
 }
 
 div.container-div  {
     border: 3rem;
     border-radius: 3rem;
-    border-color: purple;
-    align-self: center;
-    float: none;
-    vertical-align: middle;
+    border-color: grey;
+    background-color: grey;
+    height: 80%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
-button {
+input.enter {
     border: 3rem;
     border-radius: 3rem;
     border-color: black;
-    background-color: antiquewhite;
+    background-color: white;
     text-align: center;
-    align-self: center;
+    width: 200%;
+    height: 5vh;
+    margin-left: -120%;
+}
+
+textarea {
+    resize: none;
 }
