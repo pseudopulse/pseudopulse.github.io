@@ -14,7 +14,7 @@ body {
     background-color: grey;
 }
 
-div.container-div {
+div.container-div  {
     border: 3rem;
     border-radius: 3rem;
     border-color: purple;
