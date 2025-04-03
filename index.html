@@ -4,16 +4,28 @@
         <meta charset="utf-8">
         <title>Apidormal</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Doto:wght@100..900&family=Jersey+10&display=swap" rel="stylesheet">
     </head>
 
     <link rel="stylesheet" href="index.css">
 
-    <body class="">
-        <script src="main.js"></script>
+    <body class="bg-yellow-200 justify-center flex">
         
-        <div id="apiaryTab" class="container my-5">
-            <h1 id="honeyText" class="text-yellow text-center">You have %HONEY% honey.</h1>
-            <pi id="moneyText" class="text-yellow text-center">You have %MONEY% in funding.</p>
+        <div id="apiaryTab" class="justify-center flex flex-col mt-10">
+            <h1 id="honeyText" class="defaultfont text-6xl font-outline-2 text-yellow-300 text-center">You have %HONEY% honey.</h1>
+            <p id="moneyText" class="defaultfont text-4xl font-outline-1 text-yellow-300 text-center">You have %MONEY% in funding.</p>
+
+            <div class="mt-40 flex-col flex">
+                <button class="rounded-md w-60 bg-gray-500 self-center" onclick="clickProduceBee()">Produce Bee</button>
+                <p id="beeText" class="defaultfont text-4xl font-outline-1 text-yellow-300 text-center">There are X bees.</p>
+                <p id="beeProduceText" class="defaultfont text-4xl font-outline-1 text-yellow-300 text-center">Your bees are producing X honey/s</p>
+            </div>
         </div>
     </body>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/break_infinity.js@1.2.0/dist/break_infinity.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
 </html>
