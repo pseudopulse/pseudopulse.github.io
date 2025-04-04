@@ -15,7 +15,7 @@ function sellHoney() {
 
     let toSell = honey * honeyBulk;
 
-    money += (honey * toSell) * ((sellRate(0) + sellRate(toSell)) / 2);
+    money += (toSell) * ((sellRate(0) + sellRate(toSell)) / 2);
     honey -= toSell;
     accumulatedHoneySale += toSell;
 }
