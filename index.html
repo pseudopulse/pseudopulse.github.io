@@ -17,15 +17,64 @@
             <h1 id="honeyText" class="defaultfont text-6xl font-outline-2 text-yellow-300 text-center">You have %HONEY% honey.</h1>
             <p id="moneyText" class="defaultfont text-4xl font-outline-1 text-yellow-300 text-center">You have %MONEY% in funding.</p>
 
-            <div class="mt-40 flex-col flex">
-                <button class="rounded-md w-60 bg-gray-500 self-center" onclick="clickProduceBee()">Produce Bee</button>
-                <p id="beeText" class="defaultfont text-4xl font-outline-1 text-yellow-300 text-center">There are X bees.</p>
-                <p id="beeProduceText" class="defaultfont text-4xl font-outline-1 text-yellow-300 text-center">Your bees are producing X honey/s</p>
+            <div id="bees" class="mt-20 flex-row flex space-x-5 ml-50">
+                <button class="clickable border-4 border-black defaultfont text-4xl font-outline-1 text-yellow-300 w-60 bg-yellow-400 self-center" onclick="clickProduceBee()">Produce Bee</button>
+                <div class="flex-col">
+                    <p id="beeText" class="defaultfont text-4xl font-outline-1 text-yellow-300">There are X bees.</p>
+                    <p id="beeProduceText" class="defaultfont text-4xl font-outline-1 text-yellow-300">Your bees are producing X honey/s</p>
+                </div>
             </div>
+
+            <div id="apiaries" class="mt-5 flex-row flex space-x-5 ml-50">
+                <button id="buyApiary" class="clickable border-4 border-black defaultfont text-4xl font-outline-1 text-yellow-300 w-60 bg-yellow-400 self-center mb-10" onclick="buyApiary()">Produce Bee</button>
+                <div class="flex-col">
+                    <p id="apiaryText" class="defaultfont text-4xl font-outline-1 text-yellow-300">There are X bees.</p>
+                    <p id="apiaryProduceText" class="defaultfont text-4xl font-outline-1 text-yellow-300">Your bees are producing X honey/s</p>
+                </div>
+            </div>
+
+            <div id="apiactories" class="flex-row flex space-x-5 ml-50">
+                <button id="buyApiactory" class="clickable border-4 border-black defaultfont text-4xl font-outline-1 text-yellow-300 w-60 bg-yellow-400 self-center mb-10" onclick="buyApiactory()">Produce Bee</button>
+                <div class="flex-col">
+                    <p id="apiactoryText" class="defaultfont text-4xl font-outline-1 text-yellow-300">There are X bees.</p>
+                    <p id="apiactoryProduceText" class="defaultfont text-4xl font-outline-1 text-yellow-300">Your bees are producing X honey/s</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="fundingTab" class="justify-center flex flex-col mt-10">
+            <h1 id="honeyText" class="defaultfont text-6xl font-outline-2 text-yellow-300 text-center">You have %HONEY% honey.</h1>
+            <p id="moneyText" class="defaultfont text-4xl font-outline-1 text-yellow-300 text-center">You have %MONEY% in funding.</p>
+
+            <div id="selling" class="mt-20 flex-row flex space-x-5">
+                <div class="flex-col">
+                    <div class="flex-row space-x-1 m-auto w-90">
+                        <button class="clickable border-4 border-black defaultfont text-4xl font-outline-1 text-yellow-300 w-60 bg-yellow-400 align-middle" onclick="sellHoney()">Sell Honey</button>
+                        <input id="sellPercent" type="number" min="1" max="100" class="border-4 h-12 border-black defaultfont text-4xl font-outline-1 resize-none text-yellow-300 w-20 bg-white align-middle text-center"></textarea>
+                    </div>
+                    <p id="sellInfo" class="defaultfont text-4xl font-outline-1 text-yellow-300 text-center align-middle">There are X bees.</p>
+                    <p id="sellRate" class="defaultfont text-4xl font-outline-1 text-yellow-300 text-center align-middle">Your bees are producing X honey/s</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="loadingTab" class="justify-center flex flex-col">
+            <h1 id="honeyText" class="defaultfont text-6xl font-outline-2 text-yellow-300 text-center">LOADING.</h1>
+        </div>
+
+        <div id="navbar" class="absolute justify-center flex flex-row bottom-0 space-x-5">
+            <button id="menuApiary" class="clickable border-4 border-black defaultfont text-4xl font-outline-1 text-yellow-300 w-60 bg-yellow-400 self-center mb-10" onclick="setState(0)">Hive</button>
+            <button id="menuIncome" class="clickable border-4 border-black defaultfont text-4xl font-outline-1 text-yellow-300 w-60 bg-yellow-400 self-center mb-10" onclick="setState(1)">Income</button>
+        </div>
         </div>
     </body>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/break_infinity.js@1.2.0/dist/break_infinity.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-
+    <script type="text/javascript" src="src/main.js"></script>
+    <script type="text/javascript" src="src/save.js"></script>
+    <script type="text/javascript" src="src/loading.js"></script>
+    <script type="text/javascript" src="src/production.js"></script>
+    <script type="text/javascript" src="src/ui.js"></script>
+    <script type="text/javascript" src="src/apiary.js"></script>
+    <script type="text/javascript" src="src/funding.js"></script>
 </html>
