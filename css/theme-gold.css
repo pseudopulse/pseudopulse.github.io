@@ -1,0 +1,21 @@
+:root {
+  --yellow-light: rgb(0, 0, 0);
+
+  --yellow-normal: rgb(0, 0, 0);
+
+  --yellow-dark: rgb(181, 161, 0);
+
+  --yellow-selected: rgb(227, 200, 47);
+
+  --gray-light: rgb(55, 55, 55);
+
+  --gray-dark: rgb(0, 0, 0);
+
+  --disabled: rgb(92, 7, 7);
+
+  --disabled-light: rgb(134, 24, 24);
+
+  --outline: rgb(255, 238, 0);
+
+  --shadow: #fff;
+}
